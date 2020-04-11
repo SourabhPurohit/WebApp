@@ -16,7 +16,7 @@ public class createpage extends HttpServlet {
 		PrintWriter out=res.getWriter();
 		try
 		{
-			Class.forName("org.postgresql.Driver");
+			/*Class.forName("org.postgresql.Driver");
 			String jdbcUrl="jdbc:postgresql://3.135.9.194:5432/postgres";
 			String username="postgres";
 			String password="";
@@ -35,7 +35,7 @@ public class createpage extends HttpServlet {
 			ResultSet rs1= statement.executeQuery(sql);
 			
 			String sql1= "SELECT  * FROM avt;";
-			ResultSet rs= statement.executeQuery(sql1);
+			ResultSet rs= statement.executeQuery(sql1);*/
 			
 			
 			        out.println("<html>");
@@ -70,7 +70,7 @@ public class createpage extends HttpServlet {
 					out.println("<th style="+"color:#9a965b;"+">Date</th>");
 					out.println("<th style="+"color:#9a965b;"+">Status</th>");
 					out.println("</tr>");
-					while(rs.next())
+					/*while(rs.next())
 					{
 						String tn=rs.getString("tnum");
 						String prod=rs.getString("product");
@@ -86,7 +86,7 @@ public class createpage extends HttpServlet {
 						out.println("<th>"+date+"</th>");
 						out.println("<th>"+stat+"</th>");
 						out.println("</tr>");
-					}
+					}*/
 					System.out.println("Crete Ticket Unit Test Passed");
 					out.println("<table>");
 		}
