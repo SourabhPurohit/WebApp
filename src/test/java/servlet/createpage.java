@@ -90,7 +90,8 @@ public class createpage extends HttpServlet {
 					System.out.println("Crete Ticket Unit Test Passed");
 					out.println("<table>");
 		}
-		catch(ClassNotFoundException cnfe)
+		/*catch(ClassNotFoundException cnfe)*/
+		catch(Exception e)
 		{
 			out.println("class not found");
 		}
