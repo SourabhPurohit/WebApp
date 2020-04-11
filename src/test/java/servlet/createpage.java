@@ -95,7 +95,8 @@ public class createpage extends HttpServlet {
 			out.println("class not found");
 		}
 		}
-	catch(SQLException e)
+	/*catch(SQLException e)*/
+		catch(Exception e)
 	{
 	throw new RuntimeException("Cannot connect the database!", e);		
 		}
